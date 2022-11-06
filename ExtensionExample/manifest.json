@@ -1,5 +1,5 @@
 {
-  "background": {
+  "background.service_worker": {
     "persistent": false,
     "scripts": [
       "./js/background.js"
@@ -15,32 +15,29 @@
       ]
     }
   ],
-  "browser_action": {
-    "default_icon": "./img/icons/extension/38x38.png",
+  "action": {
+    "default_icon": "./img/icons/extension/icon.png",
     "default_popup": "popup.html",
-    "default_title": "__MSG_name__"
+    "default_title": "Saver",
+    "icons": {
+      "128": "./img/icons/extension/icon.png",
+      "16": "./img/icons/extension/icon.png",
+      "32": "./img/icons/extension/icon.png",
+      "48": "./img/icons/extension/icon.png"
+    }
   },
-  "default_locale": "en",
-  "description": "__MSG_description__",
-  "icons": {
-    "128": "./img/icons/extension/128x128.png",
-    "16": "./img/icons/extension/16x16.png",
-    "32": "./img/icons/extension/32x32.png",
-    "48": "./img/icons/extension/48x48.png"
-  },
-  "manifest_version": 2,
-  "name": "__MSG_name__",
-  "options_page": "popup.html?options=1",
+
+  "manifest_version": 3,
+  "name": "Saver",
   "permissions": [
     "activeTab",
     "cookies",
     "clipboardWrite",
     "storage",
     "background",
-    "<all_urls>",
-    "tabs"
+    "tabs",
+    "scripting"
   ],
-  "short_name": "__MSG_name__",
-  "update_url": "https://clients2.google.com/service/update2/crx",
+  "short_name": "Saver",
   "version": "1.1"
 }

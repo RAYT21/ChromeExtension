@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <title>Chrome Extension Example</title>
-    <link href="./css/style.css" rel='stylesheet' type="text/css">
-    <script src="./js/popup.js"></script>
+    <meta charset="UTF-8">
+    <style type="text/css">
+
+        /* задаём размеры кнопки и размер текста на кнопке  */
+        button {
+            font-size: 12px;
+            height: 40px;
+            width: 80px;
+        }
+    </style>
 </head>
 <body>
-<div>
-    <div class="setColor" data-color="#f7a7a7" style="background: #f7a7a7;"></div>
-    <div class="setColor" data-color="#c4d9ff" style="background: #c4d9ff;"></div>
-</div>
-<div id="popupContent"></div>
+<!-- создаём кнопку на странице -->
+<button id="save">Сохранить</button>
+<!-- подключаем скрипт, который обработает нажатие на эту кнопку -->
+<script src="./js/popup.js"></script>
 </body>
 </html>
